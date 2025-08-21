@@ -1,13 +1,13 @@
-# 📱 UttarakhandShaadi Mobile App
+# 📱 UttarakhandShadi Mobile App
 
-Welcome to the official mobile app release repository for UttarakhandShaadi.com – a trusted platform dedicated to helping people from Uttarakhand find suitable matrimonial matches.
-This repository stores the latest Android (APK) and iOS builds of the UttarakhandShaadi mobile application so you can easily download and test them.
+Welcome to the official mobile app release repository for UttarakhandShadi.com – a trusted platform dedicated to helping people from Uttarakhand find suitable matrimonial matches.
+This repository stores the latest Android (APK) and iOS builds of the UttarakhandShadi mobile application so you can easily download and test them.
 
 ![Social Banner](./screenshots/github_social_frame.png)
 
-## ✨ About UttarakhandShaadi
+## ✨ About UttarakhandShadi
 
-UttarakhandShaadi.com is a trusted matrimonial platform exclusively for the people of Uttarakhand, where users can:
+UttarakhandShadi.com is a trusted matrimonial platform exclusively for the people of Uttarakhand, where users can:
 
 - Register for themselves or on behalf of family/children.
 - Browse profiles and find suitable matches.
@@ -41,14 +41,14 @@ Currently, we distribute the iOS test version using Apple TestFlight:
 
 - Install TestFlight app from the App Store.
 - Accept the email invite (you’ll get one if you are selected as a tester).
-- Inside TestFlight, you’ll see UttarakhandShaadi App → tap Install.
+- Inside TestFlight, you’ll see UttarakhandShadi App → tap Install.
 
 ## 🆘 Need Help?
 
 If you face issues:
 
-Open the Issues tab of this repository and report the problem.
-Or contact us directly on uttarakhandshadi.com.
+- Open the Issues tab of this repository and report the problem.
+- Or contact us directly on uttarakhandshadi.com.
 
 ## 🚀 Stay Updated
 
