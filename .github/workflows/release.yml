@@ -1,0 +1,43 @@
+name: "Release Android APK"
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  release-android-apk:
+    name: Release Latest APK
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - run: |
+          git config --global user.email "joshidipesh12@gmail.com"
+          git config --global user.name "Dipesh Joshi"
+
+      - name: Bump Version and Push Tag
+        id: version-update
+        uses: anothrNick/github-tag-action@1.73.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BUMP: patch # setup logic to change this to minor or major automatically
+          TAG_PREFIX: v
+          INITIAL_VERSION: 0.4.4
+          TAG_MESSAGE: New Android Release Tag
+          GIT_COMMITTER_NAME: "Dipesh Joshi"
+          GIT_COMMITTER_EMAIL: "joshidipesh12@gmail.com"
+
+      - name: Github Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version-update.outputs.new_tag }}
+          files: ./releases/andriod/uttarakhandshadi.apk
+          body_path: ./releases/android/notes/${{ steps.version-update.outputs.new_tag }}.md
+          generate_release_notes: false
+          make_latest: true
+          prerelease: false
