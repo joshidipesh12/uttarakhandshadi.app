@@ -35,9 +35,9 @@ jobs:
       - name: Github Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ steps.version-update.outputs.new_tag }}
+          tag_name: ${{ steps.version-update.outputs.tag }}
           files: ./releases/andriod/uttarakhandshadi.apk
-          body_path: ./releases/android/notes/${{ steps.version-update.outputs.new_tag }}.md
+          body_path: ./releases/android/notes/${{ steps.version-update.outputs.tag }}.md
           generate_release_notes: false
           make_latest: true
           prerelease: false
