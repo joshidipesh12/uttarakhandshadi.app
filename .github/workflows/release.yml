@@ -27,7 +27,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: patch # setup logic to change this to minor or major automatically
           TAG_PREFIX: v
-          INITIAL_VERSION: 0.4.4
+          INITIAL_VERSION: 1.5.4
           TAG_MESSAGE: New Android Release Tag
           GIT_COMMITTER_NAME: "Dipesh Joshi"
           GIT_COMMITTER_EMAIL: "joshidipesh12@gmail.com"
